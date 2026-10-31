@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "slug": "mirror-tree",
+  "title": "Mirror the Tree",
+  "topic": "trees",
+  "difficulty": "easy",
+  "source": "curated",
+  "created_at": "2026-10-31T14:18:42Z",
+  "expected_complexity": {
+    "time": "O(n)",
+    "space": "O(h)"
+  },
+  "compare": {
+    "mode": "exact"
+  },
+  "signatures": {
+    "python": {
+      "function": "mirror",
+      "params": [
+        {
+          "name": "root",
+          "type": "TreeNode | None"
+        }
+      ],
+      "returns": "TreeNode | None"
+    }
+  }
+}

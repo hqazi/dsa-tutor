@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "slug": "min-climb-cost",
+  "title": "Cheapest Climb",
+  "topic": "dynamic-programming",
+  "difficulty": "easy",
+  "source": "curated",
+  "created_at": "2026-10-31T14:18:43Z",
+  "expected_complexity": {
+    "time": "O(n)",
+    "space": "O(1)"
+  },
+  "compare": {
+    "mode": "exact"
+  },
+  "signatures": {
+    "python": {
+      "function": "min_climb_cost",
+      "params": [
+        {
+          "name": "cost",
+          "type": "list[int]"
+        }
+      ],
+      "returns": "int"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "slug": "level-lists",
+  "title": "Level by Level",
+  "topic": "trees",
+  "difficulty": "medium",
+  "source": "curated",
+  "created_at": "2026-10-31T14:18:42Z",
+  "expected_complexity": {
+    "time": "O(n)",
+    "space": "O(n)"
+  },
+  "compare": {
+    "mode": "exact"
+  },
+  "signatures": {
+    "python": {
+      "function": "levels",
+      "params": [
+        {
+          "name": "root",
+          "type": "TreeNode | None"
+        }
+      ],
+      "returns": "list[list[int]]"
+    }
+  }
+}

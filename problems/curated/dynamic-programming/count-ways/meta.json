@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "slug": "count-ways",
+  "title": "Ways Up the Stairs",
+  "topic": "dynamic-programming",
+  "difficulty": "easy",
+  "source": "curated",
+  "created_at": "2026-10-31T14:18:43Z",
+  "expected_complexity": {
+    "time": "O(n)",
+    "space": "O(1)"
+  },
+  "compare": {
+    "mode": "exact"
+  },
+  "signatures": {
+    "python": {
+      "function": "count_ways",
+      "params": [
+        {
+          "name": "steps",
+          "type": "int"
+        }
+      ],
+      "returns": "int"
+    }
+  }
+}

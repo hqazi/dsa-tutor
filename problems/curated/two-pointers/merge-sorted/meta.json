@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "slug": "merge-sorted",
+  "title": "Merge Two Leaderboards",
+  "topic": "two-pointers",
+  "difficulty": "easy",
+  "source": "curated",
+  "created_at": "2026-10-31T14:18:41Z",
+  "expected_complexity": {
+    "time": "O(n + m)",
+    "space": "O(n + m) for the output"
+  },
+  "compare": {
+    "mode": "exact"
+  },
+  "signatures": {
+    "python": {
+      "function": "merge_sorted",
+      "params": [
+        {
+          "name": "a",
+          "type": "list[int]"
+        },
+        {
+          "name": "b",
+          "type": "list[int]"
+        }
+      ],
+      "returns": "list[int]"
+    }
+  }
+}

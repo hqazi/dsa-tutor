@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "slug": "count-target-subarrays",
+  "title": "Count Target Stretches",
+  "topic": "prefix-sums",
+  "difficulty": "medium",
+  "source": "curated",
+  "created_at": "2026-10-31T14:18:41Z",
+  "expected_complexity": {
+    "time": "O(n)",
+    "space": "O(n)"
+  },
+  "compare": {
+    "mode": "exact"
+  },
+  "signatures": {
+    "python": {
+      "function": "count_subarrays",
+      "params": [
+        {
+          "name": "nums",
+          "type": "list[int]"
+        },
+        {
+          "name": "k",
+          "type": "int"
+        }
+      ],
+      "returns": "int"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "slug": "group-by-letters",
+  "title": "Same Letters, Same Shelf",
+  "topic": "hashing",
+  "difficulty": "medium",
+  "source": "curated",
+  "created_at": "2026-10-31T14:18:40Z",
+  "expected_complexity": {
+    "time": "O(n · k) where k is the word length (or O(n · k log k) with sorting)",
+    "space": "O(n · k)"
+  },
+  "compare": {
+    "mode": "unordered_deep"
+  },
+  "signatures": {
+    "python": {
+      "function": "group_words",
+      "params": [
+        {
+          "name": "words",
+          "type": "list[str]"
+        }
+      ],
+      "returns": "list[list[str]]"
+    }
+  }
+}

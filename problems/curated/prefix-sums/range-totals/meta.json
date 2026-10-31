@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "slug": "range-totals",
+  "title": "Range Totals",
+  "topic": "prefix-sums",
+  "difficulty": "easy",
+  "source": "curated",
+  "created_at": "2026-10-31T14:18:41Z",
+  "expected_complexity": {
+    "time": "O(n + q)",
+    "space": "O(n)"
+  },
+  "compare": {
+    "mode": "exact"
+  },
+  "signatures": {
+    "python": {
+      "function": "range_totals",
+      "params": [
+        {
+          "name": "nums",
+          "type": "list[int]"
+        },
+        {
+          "name": "queries",
+          "type": "list[list[int]]"
+        }
+      ],
+      "returns": "list[int]"
+    }
+  }
+}

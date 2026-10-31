@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "slug": "multiply-others",
+  "title": "Everyone Else's Product",
+  "topic": "arrays-strings",
+  "difficulty": "medium",
+  "source": "curated",
+  "created_at": "2026-10-31T14:18:40Z",
+  "expected_complexity": {
+    "time": "O(n)",
+    "space": "O(1) extra besides the output"
+  },
+  "compare": {
+    "mode": "exact"
+  },
+  "signatures": {
+    "python": {
+      "function": "multiply_others",
+      "params": [
+        {
+          "name": "nums",
+          "type": "list[int]"
+        }
+      ],
+      "returns": "list[int]"
+    }
+  }
+}

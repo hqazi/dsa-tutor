@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "slug": "min-daily-pages",
+  "title": "Pages Per Day",
+  "topic": "binary-search",
+  "difficulty": "medium",
+  "source": "curated",
+  "created_at": "2026-10-31T14:18:42Z",
+  "expected_complexity": {
+    "time": "O(n log S) where S = sum(chapters)",
+    "space": "O(1)"
+  },
+  "compare": {
+    "mode": "exact"
+  },
+  "signatures": {
+    "python": {
+      "function": "min_daily_pages",
+      "params": [
+        {
+          "name": "chapters",
+          "type": "list[int]"
+        },
+        {
+          "name": "days",
+          "type": "int"
+        }
+      ],
+      "returns": "int"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "slug": "pair-with-target",
+  "title": "Two Receipts",
+  "topic": "hashing",
+  "difficulty": "easy",
+  "source": "curated",
+  "created_at": "2026-10-31T14:18:40Z",
+  "expected_complexity": {
+    "time": "O(n)",
+    "space": "O(n)"
+  },
+  "compare": {
+    "mode": "exact"
+  },
+  "signatures": {
+    "python": {
+      "function": "find_pair",
+      "params": [
+        {
+          "name": "amounts",
+          "type": "list[int]"
+        },
+        {
+          "name": "target",
+          "type": "int"
+        }
+      ],
+      "returns": "list[int]"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "slug": "rotate-playlist",
+  "title": "Rotate the Playlist",
+  "topic": "arrays-strings",
+  "difficulty": "easy",
+  "source": "curated",
+  "created_at": "2026-10-31T14:18:40Z",
+  "expected_complexity": {
+    "time": "O(n)",
+    "space": "O(n)"
+  },
+  "compare": {
+    "mode": "exact"
+  },
+  "signatures": {
+    "python": {
+      "function": "shift_playlist",
+      "params": [
+        {
+          "name": "tracks",
+          "type": "list[int]"
+        },
+        {
+          "name": "k",
+          "type": "int"
+        }
+      ],
+      "returns": "list[int]"
+    }
+  }
+}

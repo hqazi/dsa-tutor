@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "slug": "sort-by-frequency",
+  "title": "Most Common First",
+  "topic": "sorting",
+  "difficulty": "easy",
+  "source": "curated",
+  "created_at": "2026-10-31T14:18:42Z",
+  "expected_complexity": {
+    "time": "O(n log n)",
+    "space": "O(n)"
+  },
+  "compare": {
+    "mode": "exact"
+  },
+  "signatures": {
+    "python": {
+      "function": "frequency_sort",
+      "params": [
+        {
+          "name": "nums",
+          "type": "list[int]"
+        }
+      ],
+      "returns": "list[int]"
+    }
+  }
+}

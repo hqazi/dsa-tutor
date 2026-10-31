@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "slug": "count-islands",
+  "title": "Count the Islands",
+  "topic": "graphs",
+  "difficulty": "medium",
+  "source": "curated",
+  "created_at": "2026-10-31T14:18:43Z",
+  "expected_complexity": {
+    "time": "O(rows · cols)",
+    "space": "O(rows · cols)"
+  },
+  "compare": {
+    "mode": "exact"
+  },
+  "signatures": {
+    "python": {
+      "function": "count_islands",
+      "params": [
+        {
+          "name": "grid",
+          "type": "list[list[int]]"
+        }
+      ],
+      "returns": "int"
+    }
+  }
+}

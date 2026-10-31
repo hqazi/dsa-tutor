@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "language": "python",
+  "solution_file": "solution.py",
+  "reference_file": "reference.py",
+  "command": ["{python}", "{runner_dir}/harness.py", "--solution", "{solution}", "--tests", "{tests}", "--meta", "{meta}", "--start", "{start}"]
+}

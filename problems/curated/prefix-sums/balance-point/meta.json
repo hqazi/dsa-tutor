@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "slug": "balance-point",
+  "title": "Balance Point",
+  "topic": "prefix-sums",
+  "difficulty": "easy",
+  "source": "curated",
+  "created_at": "2026-10-31T14:18:41Z",
+  "expected_complexity": {
+    "time": "O(n)",
+    "space": "O(1)"
+  },
+  "compare": {
+    "mode": "exact"
+  },
+  "signatures": {
+    "python": {
+      "function": "balance_index",
+      "params": [
+        {
+          "name": "weights",
+          "type": "list[int]"
+        }
+      ],
+      "returns": "int"
+    }
+  }
+}

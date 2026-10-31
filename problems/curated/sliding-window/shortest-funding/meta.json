@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "slug": "shortest-funding",
+  "title": "Shortest Funding Window",
+  "topic": "sliding-window",
+  "difficulty": "medium",
+  "source": "curated",
+  "created_at": "2026-10-31T14:18:41Z",
+  "expected_complexity": {
+    "time": "O(n)",
+    "space": "O(1)"
+  },
+  "compare": {
+    "mode": "exact"
+  },
+  "signatures": {
+    "python": {
+      "function": "shortest_window",
+      "params": [
+        {
+          "name": "amounts",
+          "type": "list[int]"
+        },
+        {
+          "name": "goal",
+          "type": "int"
+        }
+      ],
+      "returns": "int"
+    }
+  }
+}

@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.*.tmp
+problems/generated/_drafts/
+explanations/_drafts/
