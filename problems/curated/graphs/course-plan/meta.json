@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "slug": "course-plan",
+  "title": "Can You Finish Every Course?",
+  "topic": "graphs",
+  "difficulty": "medium",
+  "source": "curated",
+  "created_at": "2026-10-31T14:18:43Z",
+  "expected_complexity": {
+    "time": "O(V + E)",
+    "space": "O(V + E)"
+  },
+  "compare": {
+    "mode": "exact"
+  },
+  "signatures": {
+    "python": {
+      "function": "can_finish",
+      "params": [
+        {
+          "name": "courses",
+          "type": "int"
+        },
+        {
+          "name": "prereqs",
+          "type": "list[list[int]]"
+        }
+      ],
+      "returns": "bool"
+    }
+  }
+}

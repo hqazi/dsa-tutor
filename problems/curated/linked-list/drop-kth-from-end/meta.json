@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "slug": "drop-kth-from-end",
+  "title": "Drop the K-th From the End",
+  "topic": "linked-list",
+  "difficulty": "medium",
+  "source": "curated",
+  "created_at": "2026-10-31T14:18:42Z",
+  "expected_complexity": {
+    "time": "O(n)",
+    "space": "O(1)"
+  },
+  "compare": {
+    "mode": "exact"
+  },
+  "signatures": {
+    "python": {
+      "function": "remove_kth_from_end",
+      "params": [
+        {
+          "name": "head",
+          "type": "ListNode | None"
+        },
+        {
+          "name": "k",
+          "type": "int"
+        }
+      ],
+      "returns": "ListNode | None"
+    }
+  }
+}

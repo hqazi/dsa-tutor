@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "slug": "longest-distinct",
+  "title": "Longest Stretch Without Repeats",
+  "topic": "sliding-window",
+  "difficulty": "medium",
+  "source": "curated",
+  "created_at": "2026-10-31T14:18:41Z",
+  "expected_complexity": {
+    "time": "O(n)",
+    "space": "O(min(n, alphabet))"
+  },
+  "compare": {
+    "mode": "exact"
+  },
+  "signatures": {
+    "python": {
+      "function": "longest_distinct",
+      "params": [
+        {
+          "name": "s",
+          "type": "str"
+        }
+      ],
+      "returns": "int"
+    }
+  }
+}

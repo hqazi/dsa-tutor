@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}}: explanation</title>
+<style>
+:root {
+  --bg: #fbfaf7; --surface: #ffffff; --text: #1f2328; --muted: #5d6570; --border: #dcd9d2;
+  --accent: #2f5fb3; --accent-soft: #e8eefa; --code-bg: #f3f1ec;
+  --kw: #8a2f9a; --str: #2d7a3a; --num: #a85b00; --com: #6e7781; --fn: #2f5fb3; --bi: #0f6f7a;
+  --warn: #9a4b00; --warn-soft: #fbefe2;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #15171a; --surface: #1d2024; --text: #e6e4df; --muted: #a2a8b0; --border: #33373d;
+    --accent: #8fb2f2; --accent-soft: #1f2a3d; --code-bg: #23262b;
+    --kw: #d39be0; --str: #8ccf96; --num: #f0b072; --com: #8b939c; --fn: #8fb2f2; --bi: #79c8d1;
+    --warn: #f0b072; --warn-soft: #33281d;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 8px; }
+h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 6px; }
+.meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+.meta span + span::before { content: " · "; }
+nav { font-size: 0.9rem; margin: 16px 0 8px; display: flex; flex-wrap: wrap; gap: 4px 14px; }
+nav a { color: var(--accent); text-decoration: none; }
+section { margin-top: 36px; }
+h2 { font-size: 1.2rem; margin: 0 0 10px; }
+h2 .n { color: var(--muted); font-weight: 500; margin-right: 6px; }
+h3 { font-size: 1rem; margin: 18px 0 6px; }
+p { margin: 0 0 12px; }
+ul, ol { margin: 0 0 12px; padding-left: 22px; }
+li { margin: 4px 0; }
+code {
+  font: 0.9em/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  background: var(--code-bg); padding: 1px 5px; border-radius: 4px;
+}
+pre {
+  background: var(--code-bg); border: 1px solid var(--border); border-radius: 8px;
+  padding: 14px 16px; overflow-x: auto; margin: 0 0 14px;
+}
+pre code { background: none; padding: 0; font-size: 0.88rem; line-height: 1.55; }
+.tok-kw { color: var(--kw); font-weight: 600; }
+.tok-str { color: var(--str); }
+.tok-num { color: var(--num); }
+.tok-com { color: var(--com); font-style: italic; }
+.tok-fn { color: var(--fn); }
+.tok-bi { color: var(--bi); }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
+.card h3 { margin-top: 0; }
+.badge {
+  display: inline-block; font-size: 0.8rem; background: var(--accent-soft); color: var(--accent);
+  border-radius: 999px; padding: 1px 10px; margin-right: 6px; font-family: ui-monospace, Menlo, Consolas, monospace;
+}
+.table-wrap { overflow-x: auto; margin: 0 0 14px; border: 1px solid var(--border); border-radius: 8px; }
+table { border-collapse: collapse; width: 100%; font-size: 0.9rem; background: var(--surface); }
+th, td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+th { background: var(--code-bg); font-weight: 600; }
+tr:last-child td { border-bottom: none; }
+td code { white-space: nowrap; }
+.pitfalls li::marker { color: var(--warn); }
+.pitfalls { background: var(--warn-soft); border-radius: 8px; padding: 12px 16px 12px 34px; }
+footer { margin-top: 48px; color: var(--muted); font-size: 0.85rem; border-top: 1px solid var(--border); padding-top: 12px; }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1>{{title}}</h1>
+  <p class="meta">{{meta}}</p>
+</header>
+<nav>
+  <a href="#problem">Problem</a><a href="#intuition">Intuition</a><a href="#approaches">Approaches</a><a href="#trace">Trace</a><a href="#complexity">Complexity</a><a href="#solution">Solution</a><a href="#pitfalls">Pitfalls</a>
+</nav>
+
+<section id="problem">
+  <h2><span class="n">1</span>The problem in plain words</h2>
+  {{plain_words}}
+</section>
+
+<section id="intuition">
+  <h2><span class="n">2</span>Intuition</h2>
+  {{intuition}}
+</section>
+
+<section id="approaches">
+  <h2><span class="n">3</span>From brute force to optimal</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Brute force</h3>
+      {{brute_force}}
+    </div>
+    <div class="card">
+      <h3>Optimal</h3>
+      {{optimal}}
+    </div>
+  </div>
+</section>
+
+<section id="trace">
+  <h2><span class="n">4</span>Step-by-step trace</h2>
+  {{trace}}
+</section>
+
+<section id="complexity">
+  <h2><span class="n">5</span>Complexity</h2>
+  {{complexity}}
+</section>
+
+<section id="solution">
+  <h2><span class="n">6</span>Annotated solution</h2>
+  {{solution}}
+</section>
+
+<section id="pitfalls">
+  <h2><span class="n">7</span>Common pitfalls</h2>
+  {{pitfalls}}
+</section>
+
+<footer>Generated {{generated}} by the DSA tutor · {{slug}}</footer>
+</main>
+</body>
+</html>

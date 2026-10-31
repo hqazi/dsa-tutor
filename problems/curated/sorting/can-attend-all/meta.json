@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "slug": "can-attend-all",
+  "title": "Back-to-Back Meetings",
+  "topic": "sorting",
+  "difficulty": "easy",
+  "source": "curated",
+  "created_at": "2026-10-31T14:18:42Z",
+  "expected_complexity": {
+    "time": "O(n log n)",
+    "space": "O(1) extra (besides sorting)"
+  },
+  "compare": {
+    "mode": "exact"
+  },
+  "signatures": {
+    "python": {
+      "function": "can_attend_all",
+      "params": [
+        {
+          "name": "meetings",
+          "type": "list[list[int]]"
+        }
+      ],
+      "returns": "bool"
+    }
+  }
+}

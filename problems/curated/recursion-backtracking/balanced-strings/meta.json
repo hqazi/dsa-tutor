@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "slug": "balanced-strings",
+  "title": "All Balanced Strings",
+  "topic": "recursion-backtracking",
+  "difficulty": "medium",
+  "source": "curated",
+  "created_at": "2026-10-31T14:18:42Z",
+  "expected_complexity": {
+    "time": "O(C(n) · n) where C(n) is the n-th Catalan number",
+    "space": "O(n) recursion depth (plus the output)"
+  },
+  "compare": {
+    "mode": "unordered"
+  },
+  "signatures": {
+    "python": {
+      "function": "balanced_strings",
+      "params": [
+        {
+          "name": "pairs",
+          "type": "int"
+        }
+      ],
+      "returns": "list[str]"
+    }
+  }
+}

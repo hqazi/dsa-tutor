@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "slug": "first-unique-char",
+  "title": "First Lonely Letter",
+  "topic": "hashing",
+  "difficulty": "easy",
+  "source": "curated",
+  "created_at": "2026-10-31T14:18:40Z",
+  "expected_complexity": {
+    "time": "O(n)",
+    "space": "O(1) (at most 26 counts)"
+  },
+  "compare": {
+    "mode": "exact"
+  },
+  "signatures": {
+    "python": {
+      "function": "first_unique",
+      "params": [
+        {
+          "name": "s",
+          "type": "str"
+        }
+      ],
+      "returns": "int"
+    }
+  }
+}

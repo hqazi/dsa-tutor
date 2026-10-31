@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "slug": "count-groups",
+  "title": "Friend Groups",
+  "topic": "graphs",
+  "difficulty": "easy",
+  "source": "curated",
+  "created_at": "2026-10-31T14:18:43Z",
+  "expected_complexity": {
+    "time": "O(n + m)",
+    "space": "O(n + m)"
+  },
+  "compare": {
+    "mode": "exact"
+  },
+  "signatures": {
+    "python": {
+      "function": "count_groups",
+      "params": [
+        {
+          "name": "n",
+          "type": "int"
+        },
+        {
+          "name": "friendships",
+          "type": "list[list[int]]"
+        }
+      ],
+      "returns": "int"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "slug": "fewest-coins",
+  "title": "Fewest Coins",
+  "topic": "dynamic-programming",
+  "difficulty": "medium",
+  "source": "curated",
+  "created_at": "2026-10-31T14:18:43Z",
+  "expected_complexity": {
+    "time": "O(amount · len(coins))",
+    "space": "O(amount)"
+  },
+  "compare": {
+    "mode": "exact"
+  },
+  "signatures": {
+    "python": {
+      "function": "fewest_coins",
+      "params": [
+        {
+          "name": "coins",
+          "type": "list[int]"
+        },
+        {
+          "name": "amount",
+          "type": "int"
+        }
+      ],
+      "returns": "int"
+    }
+  }
+}

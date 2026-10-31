@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "slug": "all-subsets",
+  "title": "Every Possible Team",
+  "topic": "recursion-backtracking",
+  "difficulty": "easy",
+  "source": "curated",
+  "created_at": "2026-10-31T14:18:42Z",
+  "expected_complexity": {
+    "time": "O(n · 2^n)",
+    "space": "O(n) recursion depth (plus the output)"
+  },
+  "compare": {
+    "mode": "unordered_deep"
+  },
+  "signatures": {
+    "python": {
+      "function": "subsets",
+      "params": [
+        {
+          "name": "players",
+          "type": "list[int]"
+        }
+      ],
+      "returns": "list[list[int]]"
+    }
+  }
+}

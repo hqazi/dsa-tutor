@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "slug": "compress-runs",
+  "title": "Compress the Sensor Log",
+  "topic": "arrays-strings",
+  "difficulty": "easy",
+  "source": "curated",
+  "created_at": "2026-10-31T14:18:40Z",
+  "expected_complexity": {
+    "time": "O(n)",
+    "space": "O(n)"
+  },
+  "compare": {
+    "mode": "exact"
+  },
+  "signatures": {
+    "python": {
+      "function": "compress_runs",
+      "params": [
+        {
+          "name": "log",
+          "type": "str"
+        }
+      ],
+      "returns": "str"
+    }
+  }
+}

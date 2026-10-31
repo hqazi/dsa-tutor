@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "slug": "floor-sqrt",
+  "title": "Square Root, Rounded Down",
+  "topic": "binary-search",
+  "difficulty": "easy",
+  "source": "curated",
+  "created_at": "2026-10-31T14:18:42Z",
+  "expected_complexity": {
+    "time": "O(log x)",
+    "space": "O(1)"
+  },
+  "compare": {
+    "mode": "exact"
+  },
+  "signatures": {
+    "python": {
+      "function": "floor_sqrt",
+      "params": [
+        {
+          "name": "x",
+          "type": "int"
+        }
+      ],
+      "returns": "int"
+    }
+  }
+}

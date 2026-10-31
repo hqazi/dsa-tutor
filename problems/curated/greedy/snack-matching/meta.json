@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "slug": "snack-matching",
+  "title": "Snacks for the Team",
+  "topic": "greedy",
+  "difficulty": "easy",
+  "source": "curated",
+  "created_at": "2026-10-31T14:18:43Z",
+  "expected_complexity": {
+    "time": "O(n log n + m log m)",
+    "space": "O(1) extra (besides sorting)"
+  },
+  "compare": {
+    "mode": "exact"
+  },
+  "signatures": {
+    "python": {
+      "function": "max_content",
+      "params": [
+        {
+          "name": "appetites",
+          "type": "list[int]"
+        },
+        {
+          "name": "snacks",
+          "type": "list[int]"
+        }
+      ],
+      "returns": "int"
+    }
+  }
+}

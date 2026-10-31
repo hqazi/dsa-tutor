@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "slug": "rope-joining",
+  "title": "Cheapest Way to Join Ropes",
+  "topic": "heaps",
+  "difficulty": "easy",
+  "source": "curated",
+  "created_at": "2026-10-31T14:18:43Z",
+  "expected_complexity": {
+    "time": "O(n log n)",
+    "space": "O(n)"
+  },
+  "compare": {
+    "mode": "exact"
+  },
+  "signatures": {
+    "python": {
+      "function": "min_join_cost",
+      "params": [
+        {
+          "name": "ropes",
+          "type": "list[int]"
+        }
+      ],
+      "returns": "int"
+    }
+  }
+}

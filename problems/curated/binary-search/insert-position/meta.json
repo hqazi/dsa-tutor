@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "slug": "insert-position",
+  "title": "Where Does It Go?",
+  "topic": "binary-search",
+  "difficulty": "easy",
+  "source": "curated",
+  "created_at": "2026-10-31T14:18:42Z",
+  "expected_complexity": {
+    "time": "O(log n)",
+    "space": "O(1)"
+  },
+  "compare": {
+    "mode": "exact"
+  },
+  "signatures": {
+    "python": {
+      "function": "insert_position",
+      "params": [
+        {
+          "name": "sorted_ids",
+          "type": "list[int]"
+        },
+        {
+          "name": "target",
+          "type": "int"
+        }
+      ],
+      "returns": "int"
+    }
+  }
+}

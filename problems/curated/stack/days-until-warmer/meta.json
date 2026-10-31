@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "slug": "days-until-warmer",
+  "title": "Days Until Warmer",
+  "topic": "stack",
+  "difficulty": "medium",
+  "source": "curated",
+  "created_at": "2026-10-31T14:18:41Z",
+  "expected_complexity": {
+    "time": "O(n)",
+    "space": "O(n)"
+  },
+  "compare": {
+    "mode": "exact"
+  },
+  "signatures": {
+    "python": {
+      "function": "wait_days",
+      "params": [
+        {
+          "name": "temps",
+          "type": "list[int]"
+        }
+      ],
+      "returns": "list[int]"
+    }
+  }
+}

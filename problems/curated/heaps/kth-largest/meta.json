@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "slug": "kth-largest",
+  "title": "K-th Best Score",
+  "topic": "heaps",
+  "difficulty": "easy",
+  "source": "curated",
+  "created_at": "2026-10-31T14:18:43Z",
+  "expected_complexity": {
+    "time": "O(n log k)",
+    "space": "O(k)"
+  },
+  "compare": {
+    "mode": "exact"
+  },
+  "signatures": {
+    "python": {
+      "function": "kth_largest",
+      "params": [
+        {
+          "name": "scores",
+          "type": "list[int]"
+        },
+        {
+          "name": "k",
+          "type": "int"
+        }
+      ],
+      "returns": "int"
+    }
+  }
+}

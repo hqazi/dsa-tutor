@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "slug": "merge-bookings",
+  "title": "Merge Room Bookings",
+  "topic": "sorting",
+  "difficulty": "medium",
+  "source": "curated",
+  "created_at": "2026-10-31T14:18:42Z",
+  "expected_complexity": {
+    "time": "O(n log n)",
+    "space": "O(n)"
+  },
+  "compare": {
+    "mode": "exact"
+  },
+  "signatures": {
+    "python": {
+      "function": "merge_bookings",
+      "params": [
+        {
+          "name": "bookings",
+          "type": "list[list[int]]"
+        }
+      ],
+      "returns": "list[list[int]]"
+    }
+  }
+}
